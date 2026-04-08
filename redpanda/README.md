@@ -17,7 +17,7 @@ Connect Datadog with [Redpanda][1] to view key metrics and add additional metric
 
 #### Host
 
-To configure this check for an Agent running on a host, run `datadog-agent integration install -t datadog-redpanda==<INTEGRATION_VERSION>`.
+To configure this check for an Agent running on a host, run `datadog-agent integration install -t datadog-redpanda==2.2.0`.
 
 <!-- xxz tab xxx -->
 <!-- xxx tab "Containerized" xxx -->
@@ -33,7 +33,7 @@ To build an updated version of the Agent:
 ```dockerfile
 FROM gcr.io/datadoghq/agent:latest
 
-ARG INTEGRATION_VERSION=2.0.0
+ARG INTEGRATION_VERSION=2.2.0
 
 RUN agent integration install -r -t datadog-redpanda==${INTEGRATION_VERSION}
 ```
@@ -152,6 +152,6 @@ Need help? Contact [Datadog support][8].
 [6]: https://github.com/DataDog/integrations-extras/blob/master/redpanda/metadata.csv
 [7]: https://github.com/DataDog/integrations-extras/blob/master/redpanda/assets/service_checks.json
 [8]: https://docs.datadoghq.com/help/
-[9]: /account/settings/agent/latest
+[9]: https://docs.datadoghq.com/containers/kubernetes/log/
 [10]: https://docs.datadoghq.com/agent/guide/community-integrations-installation-with-docker-agent
 [11]: https://docs.datadoghq.com/agent/guide/agent-configuration-files/#agent-configuration-directory

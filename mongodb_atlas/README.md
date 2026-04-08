@@ -22,6 +22,7 @@ You can install the MongoDB Atlas integration by logging in to your Atlas portal
 
 1. Retrieve or create a Datadog [API key][1].
 2. In the [Atlas portal][2], enter a Datadog API key under **Integrations** -> **Datadog Settings**.
+3. Under **Datadog Settings**, toggle the metrics you want to monitor (database, collection, query shape). You can also choose to send user-defined resource tags.
 
 ## Data Collected
 
@@ -39,7 +40,7 @@ The MongoDB Atlas integration does not include any service checks.
 
 ## Troubleshooting
 
-Need help? [Contact Datadog Support][5]
+Need help? Contact [MongoDB Support][5]
 
 ## Further Reading
 
@@ -52,6 +53,6 @@ Additional helpful documentation, links, and articles:
 [2]: https://docs.atlas.mongodb.com/tutorial/monitoring-integrations/#procedure
 [3]: https://github.com/DataDog/integrations-extras/blob/master/mongodb_atlas/metadata.csv
 [4]: https://www.mongodb.com/docs/atlas/configure-alerts/#std-label-notification-options
-[5]: https://docs.datadoghq.com/help/
+[5]: https://support.mongodb.com/
 [6]: https://www.datadoghq.com/blog/monitor-atlas-performance-metrics-with-datadog/
 [7]: https://www.mongodb.com/products/platform/atlas-for-government

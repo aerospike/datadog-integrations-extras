@@ -1,4 +1,5 @@
 .github/CODEOWNERS*                                        @DataDog/agent-integrations
+.github/workflows/*                                        @DataDog/agent-integrations
 
 # Documentation
 **/README.md                             @DataDog/documentation
@@ -11,6 +12,7 @@
 /1e/                                     support@1e.com @DataDog/ecosystems-review
 /ably/                                   @ably support@ably.com @DataDog/ecosystems-review
 /agora_analytics/                        @Agora zhangpeizhe@agora.io @DataDog/ecosystems-review
+/aimon/                                   @DataDog/ecosystems-review
 /akamai_datastream_2/                    @DataDog/saas-integrations
 /akeyless_gateway/                       @akljph support@akeyless.io  @DataDog/ecosystems-review
 /alertnow/                               @Uijong-Kim uijong.kim@bespinglobal.com
@@ -33,7 +35,7 @@
 /bonsai/                                 dev@onemorecloud.com
 /botprise/                               @codechefnisha-bp nisha.kumari@botprise.com
 /bottomline_recordandreplay/             @nbk96f1 Andrew.Leon@bottomline.com @DataDog/ecosystems-review
-/buddy/                                  support@buddy.works
+/buddy/                                  @DataDog/saas-integrations support@buddy.works
 /buoyant_cloud/                          @BuoyantIO/buoys @DataDog/ecosystems-review
 /causely/                                @esara support@causely.io @DataDog/ecosystems-review
 /census/                                 @sankalp04 support@getcensus.com @DataDog/ecosystems-review
@@ -54,21 +56,21 @@
 /cybersixgill_actionable_alerts/         @shahul-loginsoft sshaik@loginsoft.com @DataDog/ecosystems-review
 /cyral/                                  @tyrannosaurus-becks product@cyral.com @DataDog/ecosystems-review
 /data_runner/                            @DataDog/apps-sdk @DataDog/ecosystems-review
-/datazoom/                               @DataDog/saas-integrations @DataDog/saas-integrations
+/datazoom/                               @DataDog/saas-integrations
 /devcycle/                               @nikolasleblanc
 /discord/                                @DataDog/chat-integrations
 /drata/                                  @jason-drata support@drata.com @DataDog/ecosystems-review
 /docontrol/                              @lielran @DataDog/ecosystems-review
 /doctordroid/                            @dimittal @DataDog/ecosystems-review
-/dylibso-webassembly/                  @nilslice @bhelx @DataDog/ecosystems-review
+/dylibso-webassembly/                    @nilslice @bhelx @DataDog/ecosystems-review
 /doppler/                                @nmanoogian @apazzolini @doppler-admin @DataDog/ecosystems-review
-/doppler/assets/logs/                    @nmanoogian @apazzolini @doppler-admin @DataDog/ecosystems-review @DataDog/logs-backend @DataDog/logs-core
+/doppler/assets/logs/                    @nmanoogian @apazzolini @doppler-admin @DataDog/ecosystems-review @DataDog/logs-integrations-reviewers
 /embrace_mobile/                         @jpmunz @joage @DataDog/ecosystems-review
 /eppo/                                   @emetelka support@geteppo.com
 /eventstore/                             @Xorima
 /eversql/                                @tomershay team@eversql.com @DataDog/ecosystems-review
 /exim/                                   @JeanFred
-/f5-distributed-cloud/                   @GregCoward support@f5.com @DataDog/ecosystems-review
+/f5-distributed-cloud/                   @GregCoward support@f5.com @DataDog/ecosystems-review @DataDog/saas-integrations
 /fairwinds_insights_ui/                  @rbren insights@fairwinds.com @DataDog/ecosystems-review
 /fauna/                                  @fauna-chase support@fauna.com @DataDog/ecosystems-review
 /federatorai/                            @chenyingtz @yummydsky
@@ -87,6 +89,7 @@
 /go_pprof_scraper/                       @nsrip-dd
 /gnatsd/                                 @stephenprater @jaredhoyt dev@goldstar.com
 /gnatsd_streaming/                       @stephenprater @jaredhoyt dev@goldstar.com
+/grafana/                                @rtjl reubentjl@gmail.com
 /gremlin/                                support@gremlin.com
 /grpc_check/                             @keisku
 /harness_cloud_cost_management/          @akashbdj support@harness.io @DataDog/ecosystems-review
@@ -94,7 +97,7 @@
 /hasura_cloud/                           @ShraddhaAg @shahidhk support@hasura.io @DataDog/ecosystems-review
 /hbase_master/                           @everpeace
 /hbase_regionserver/                     @everpeace
-/hcp_vault/                              @himran92 @codergs
+/hcp_vault/                              @himran92 @codergs @DataDog/saas-integrations
 /hikaricp/                               @bertaudamien
 /jfrog_platform_cloud/                   @jfrog/partner-engineering @DataDog/ecosystems-review
 /jfrog_platform_self_hosted/             @jfrog/partner-engineering @DataDog/ecosystems-review
@@ -118,7 +121,7 @@
 /lighthouse/                             @DataDog/agent-integrations
 /loadrunner_professional/                @mihneavelinOT
 /logstash/                               @ervansetiawan ervansetiawan@gmail.com
-/logzio/                                 @DataDog/agent-integrations
+/logzio/                                 @DataDog/agent-integrations @DataDog/saas-integrations
 /mongodb_atlas/                          @Salil999 @JustinMason frank.sun@mongodb.com tonya.edmonds@mongodb.com
 /moovingon_ai/                           @tomm24 info@moovingon.com
 /modal/                                  @modal-labs support@modal.com @irfansharif irfan@modal.com
@@ -140,7 +143,7 @@
 /onepane/                                @sajosam sajo@onepane.ai @DataDog/ecosystems-review
 /open_policy_agent/                      @arapulido ara.pulido@datadoghq.com
 /packetfabric/                           @PacketFabric/coredump dev@packetfabric.com @DataDog/ecosystems-review
-/pagerduty/                              @light-Keeper support@pagerduty.com @DataDog/ecosystems-review
+/pagerduty_ui/                           @light-Keeper support@pagerduty.com @DataDog/ecosystems-review
 /perfectscale/                           @idan-gazit support@perfectscale.io @DataDog/ecosystems-review
 /perimeterx/                             support@perimeterx.com
 /php_apcu/                               @withgod noname@withgod.jp
@@ -164,6 +167,7 @@
 /redisenterprise/                        @maguec christian@redislabs.com @DataDog/ecosystems-review
 /redis_cloud/                            @redis-field-engineering field.engineers@redis.com
 /redis_enterprise/                       @redis-field-engineering field.engineers@redis.com
+/redis_enterprise_prometheus/            @redis-field-engineering field.engineers@redis.com
 /redis_sentinel/                         @DataDog/agent-integrations
 /redpanda/                               @redpanda-data support@redpanda.com
 /resilience4j/                           @willianccs willianccs@gmail.com
@@ -199,7 +203,7 @@
 /speedscale/                             @kenahrens ken@speedscale.com @DataDog/ecosystems-review
 /speedtest/                              @platinummonkey
 /split-rum/                              @dtk-DaveKarow
-/split/                                  @jeremy-lq
+/split/                                  @DataDog/ecosystems-review @DataDog/saas-integrations
 /sqreen/                                 @DataDog/agent-integrations
 /squadcast/                              it@squadcast.com
 /stackpulse/                             @torqio/rnd support@torq.io @DataDog/ecosystems-review
@@ -226,12 +230,13 @@
 /upbound_uxp/                            @humoflife support@upbound.io @DataDog/ecosystems-review
 /upsc/                                   @platinummonkey
 /upstash/                                @upstash support@upstash.com @DataDog/ecosystems-review
-/uptime/                                 @DataDog/ecosystems-review
+/uptime/                                 @DataDog/ecosystems-review @DataDog/saas-integrations
 /uptycs/                                 @cgadde-uptycs support@uptycs.com
 /vantage/                                @brookemckim support@vantage.sh @DataDog/ecosystems-review
 /vercel/                                 @Datadog/serverless
 /vespa/                                  @gjoranv dd@vespa.ai
 /vns3/                                   @DataDog/agent-integrations
+/warpstream/                             @DataDog/ecosystems-review
 /wayfinder/                              @jonny-scott80 jonny_scott@outlook.com
 /webb_ai/                                @anirudhwebbai support@webb.ai
 /yugabytedb_managed/                     @DataDog/saas-integrations @DataDog/ecosystems-review daniel@yugabyte.com
@@ -239,7 +244,7 @@
 /zebrium/                                @rodbagg @DataDog/ecosystems-review
 /zenduty/                                @zenbeam shubham@zenduty.com @DataDog/ecosystems-review
 /zenoh_router/                           @sashacmc
-/zscaler/                                @BoyangHuang @DataDog/saas-integrations
+/zscaler/                                @DataDog/saas-integrations
 /sosivio/                                @danarlowski info@sosiv.io @DataDog/ecosystems-review
 /sym/                                    @symopsio/eng
 /emnify/                                 @EMnify/development @EMnify/rademade
@@ -501,7 +506,7 @@
 /gitea/assets/dashboards                    @FlorentClarret @DataDog/documentation @DataDog/reporting-and-sharing @DataDog/agent-integrations
 /gitea/assets/monitors                      @FlorentClarret @DataDog/documentation @DataDog/alerting-product @DataDog/agent-integrations
 
-/gigamon/assets/logs/                       @Mrudula-Oruganti-Gigamon @DataDog/logs-backend @DataDog/logs-core
+/gigamon/assets/logs/                       @Mrudula-Oruganti-Gigamon @DataDog/logs-integrations-reviewers
 /gnatsd_streaming/*metadata.csv          @stephenprater @jaredhoyt dev@goldstar.com @DataDog/documentation
 /gnatsd_streaming/manifest.json          @stephenprater @jaredhoyt dev@goldstar.com @DataDog/documentation
 /gnatsd_streaming/README.md              @stephenprater @jaredhoyt dev@goldstar.com @DataDog/documentation
@@ -1144,7 +1149,7 @@
 /anecdote/manifest.json                    @atyulyutaev @DataDog/documentation @DataDog/ecosystems-review
 /anecdote/assets/dashboards                    @atyulyutaev @DataDog/documentation @DataDog/dashboards-backend @DataDog/agent-integrations
 /anecdote/assets/monitors                      @atyulyutaev @DataDog/documentation @DataDog/monitor-app @DataDog/agent-integrations
-/anecdote/assets/logs/                         @atyulyutaev @DataDog/agent-integrations @DataDog/logs-backend @DataDog/logs-core
+/anecdote/assets/logs/                         @atyulyutaev @DataDog/agent-integrations @DataDog/logs-integrations-reviewers
 /anecdote/README.md                        @atyulyutaev @DataDog/documentation @DataDog/ecosystems-review
 
 /celerdata/*metadata.csv                     @yandongxiao yandongxiao@starrocks.com @DataDog/documentation @DataDog/ecosystems-review
@@ -1158,17 +1163,21 @@
 /hawkeye_by_neubird/                        @DataDog/ecosystems-review
 /zilliz_cloud_zilliz_cloud/                 @DataDog/ecosystems-review
 /appomni/                           @DataDog/ecosystems-review
+/contrast_security_adr/              @DataDog/ecosystems-review
+/gravitee/                           @DataDog/ecosystems-review
 /gatling_enterprise/                           @DataDog/ecosystems-review
 
 /downdetector/                             @DataDog/ecosystems-review
 
 /chainguard/                 @DataDog/ecosystems-review
-
+/starburst_galaxy/              @DataDog/ecosystems-review
 /authzed_cloud/                 @DataDog/ecosystems-review
 /akamas/                        @DataDog/ecosystems-review
 
 /dagster/              @DataDog/ecosystems-review
+/aerospike_enterprise/ @support-aerospike @DataDog/ecosystems-review
+/scamalytics/          @ScamalyticsDev @DataDog/ecosystems-review
 
 # LEAVE THE FOLLOWING LOG OWNERSHIP LAST IN THE FILE
 # Make sure logs team is the full owner for all logs related files
-**/assets/logs/                          @DataDog/logs-integrations-reviewers @DataDog/logs-backend
+**/assets/logs/                          @DataDog/logs-integrations-reviewers

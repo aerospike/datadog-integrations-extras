@@ -2,6 +2,7 @@
   "manifest_version": "2.0.0",
   "app_uuid": "fe1f17e3-11a4-4e44-b819-8781ebcc86f8",
   "app_id": "upstash",
+  "owner": "integrations-developer-platform",
   "display_on_public_website": true,
   "tile": {
     "overview": "README.md#Overview",
@@ -9,7 +10,7 @@
     "uninstallation": "README.md#Uninstallation",
     "support": "README.md#Support",
     "changelog": "CHANGELOG.md",
-    "description": "Visualize metrics for databases and kafka clusters from Upstash",
+    "description": "Visualize metrics for Upstash resources",
     "title": "Upstash",
     "media": [
       {
@@ -19,8 +20,8 @@
       },
       {
         "media_type": "image",
-        "caption": "Upstash Kafka Metrics",
-        "image_url": "images/upstash-kafka-overview-dashboard.png"
+        "caption": "Upstash QStash Metrics",
+        "image_url": "images/upstash-qstash-overview-dashboard.png"
       }
     ],
     "classifier_tags": [
@@ -54,7 +55,7 @@
     },
     "dashboards": {
       "Upstash-Redis-Overview": "assets/dashboards/upstash_redis_overview.json",
-      "Upstash-Kafka-Overview": "assets/dashboards/upstash_kafka_overview.json"
+      "Upstash-QStash-Overview": "assets/dashboards/upstash_qstash_overview.json"
     },
     "oauth": "assets/oauth_clients.json"
   },

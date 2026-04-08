@@ -2,17 +2,45 @@
   "manifest_version": "2.0.0",
   "app_uuid": "9a772881-d31a-4ffb-92bb-7beef1088a55",
   "app_id": "akamai-datastream-2",
+  "owner": "saas-integrations",
   "display_on_public_website": true,
   "tile": {
     "overview": "README.md#Overview",
     "configuration": "README.md#Setup",
     "support": "README.md#Support",
     "changelog": "CHANGELOG.md",
-    "description": "Send your Akamai DataStream logs to Datadog",
+    "description": "Send your Akamai DataStream 2 logs to Datadog",
     "title": "Akamai DataStream 2",
-    "media": [],
+    "media": [
+      {
+        "media_type": "image",
+        "caption": "Akamai DataStream 2 Overview",
+        "image_url": "images/akamai_datastream_2_dashboard_1.png"
+      },
+      {
+        "media_type": "image",
+        "caption": "Akamai DataStream 2 Overview",
+        "image_url": "images/akamai_datastream_2_dashboard_2.png"
+      },
+      {
+        "media_type": "image",
+        "caption": "Akamai DataStream 2 Overview",
+        "image_url": "images/akamai_datastream_2_dashboard_3.png"
+      },
+      {
+        "media_type": "image",
+        "caption": "Akamai DataStream 2 Overview",
+        "image_url": "images/akamai_datastream_2_dashboard_4.png"
+      },
+      {
+        "media_type": "image",
+        "caption": "Akamai DataStream 2 Overview",
+        "image_url": "images/akamai_datastream_2_dashboard_5.png"
+      }
+    ],
     "classifier_tags": [
       "Category::Caching",
+      "Category::Content Delivery Network",
       "Category::Log Collection",
       "Supported OS::Linux",
       "Supported OS::Windows",

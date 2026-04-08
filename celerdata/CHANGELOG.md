@@ -1,5 +1,17 @@
 # CHANGELOG - celerdata
 
+## 1.2.1 / 2025-10-01
+
+***Fixed***:
+
+* Since StarRocks FE has fixed the metrics format issue, now it is needed to restore the deleted test case.
+
+## 1.2.0 / 2025-06-30
+
+***Added***:
+
+* Add the `celerdata.fe.routine_load_max_lag_of_partition` metric
+
 ## 1.1.0 / 2025-02-21
 
 ***Added***:

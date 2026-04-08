@@ -10,9 +10,6 @@ jobs:
     uses: ./.github/workflows/test-all.yml
     with:
       repo: extras
-
-      # Options
-      standard: true
     secrets: inherit
     permissions:
        # needed for codecov in test-target.yml, allows the action to get a JWT signed by Github
@@ -32,5 +29,5 @@ jobs:
       pull-requests: write
       contents: write
 
-    uses: DataDog/integrations-core/.github/workflows/test-results-master.yml@master
+    uses: DataDog/integrations-core/.github/workflows/test-results-master.yml@574d63ba88365ffbab915280ceddbaa333c63d6a # master
     secrets: inherit

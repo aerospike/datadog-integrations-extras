@@ -1,3 +1,5 @@
+# bypass-global-no-service-config-checks
+# bypass-global-grok-parser-rules-checks
 id: vercel
 backend_only: false
 facets:
@@ -81,10 +83,10 @@ pipeline:
       sources:
         - http.status_category
     - type: service-remapper
-      name: Define `proxy.host` as the official service of the log
+      name: Define `projectName` as the official service of the log
       enabled: true
       sources:
-        - proxy.host
+        - projectName
     - type: attribute-remapper
       name: Map `host` to `url_host`
       enabled: true
@@ -103,10 +105,20 @@ pipeline:
       target: network.client.geoip
       ip_processing_behavior: do-nothing
     - type: date-remapper
-      name: Define `proxy.timestamp` as the official date of the log
+      name: Define `timestamp` as the official date of the log
       enabled: true
       sources:
-        - proxy.timestamp
+        - timestamp
+    - type: trace-id-remapper
+      name: Define `traceId` as the official trace ID of the log
+      enabled: true
+      sources:
+        - traceId
+    - type: span-id-remapper
+      name: Define `spanId` as the official span ID of the log
+      enabled: true
+      sources:
+        - spanId
 metrics:
   - name: vercel.functions.invocations
     query: source:vercel @source:lambda REPORT
