@@ -3,7 +3,7 @@
 
 # Installs the NVML integration version 1.0.9.
 # See the changelog for the other versions that are available (https://github.com/DataDog/integrations-extras/blob/master/nvml/CHANGELOG.md)
-FROM gcr.io/datadoghq/agent:latest
+FROM gcr.io/datadoghq/agent:latest@sha256:86a294a2c5cb7c2b8c62e4efd4d0ff2ac00925270fc7672a9242e9a627995010
 RUN agent integration install -t -r datadog-nvml==1.0.9
 
 # Use versioned link to the requirements to install the PIP libraries used by the check
