@@ -17,6 +17,11 @@ jobs:
       pull-requests: write
 
     steps:
+    - name: Harden the runner (Audit all outbound calls)
+      uses: step-security/harden-runner@9af89fc71515a100421586dfdb3dc9c984fbf411 # v2.19.4
+      with:
+        egress-policy: audit
+
     - uses: actions/stale@98ed4cb500039dbcccf4bd9bedada4d0187f2757 # v3.0.19
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
