@@ -1,4 +1,4 @@
-FROM ruby:latest
+FROM ruby:latest@sha256:342dd3092e25f9d16fc2a5c48c5bb2d9a93717d4f900d005d6e088e2c45d3d19
 
 COPY script.sh /opt/local/script.sh
 
