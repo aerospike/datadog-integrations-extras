@@ -1,4 +1,4 @@
-FROM adoptopenjdk/openjdk8:jdk8u232-b09-alpine-slim as builder
+FROM adoptopenjdk/openjdk8:jdk8u232-b09-alpine-slim@sha256:e1f25ac6b9bd3550ab447c59a6aa45bd2a5f2b1a8ac8d7a2cccc2a4ff0a5e58c as builder
 
 ENV RESIN_HOME /opt/resin
 ENV PATH /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:$JAVA_HOME/bin:$RESIN_HOME/bin
@@ -27,7 +27,7 @@ RUN CHK_SUM=05461c51fa94ab1a304481d0d9cbab64f5772eb9119289db696b868e4adba57d && 
   mkdir -p /opt/resin/resin-data && \
   rm -rf /tmp/resin.tar.gz
 
-FROM adoptopenjdk/openjdk8:jdk8u232-b09-alpine-slim
+FROM adoptopenjdk/openjdk8:jdk8u232-b09-alpine-slim@sha256:e1f25ac6b9bd3550ab447c59a6aa45bd2a5f2b1a8ac8d7a2cccc2a4ff0a5e58c
 
 EXPOSE 8080
 EXPOSE 7199
