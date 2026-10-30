@@ -1,0 +1,86 @@
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: pip
+    directory: /cybersixgill_actionable_alerts
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: docker
+    directory: /gnatsd/tests/docker/config
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: docker
+    directory: /gnatsd_streaming/tests/docker/config
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: docker
+    directory: /go_pprof_scraper/tests/docker
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: docker
+    directory: /grpc_check/tests/docker
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: gomod
+    directory: /grpc_check/tests/docker
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: pip
+    directory: /neutrona/tests
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: docker
+    directory: /nvml/tests
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: docker
+    directory: /php_apcu/tests/php_apcu
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: docker
+    directory: /php_opcache/tests/php_opcache
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: docker
+    directory: /puma/tests/docker
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: bundler
+    directory: /puma/tests/docker
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: docker
+    directory: /resin/tests/docker
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: pip
+    directory: /riak_repl
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: docker
+    directory: /storm/tests/compose
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: pip
+    directory: /unbound
+    schedule:
+      interval: weekly
